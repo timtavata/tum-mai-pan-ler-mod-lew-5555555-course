@@ -1,0 +1,16 @@
+title: tum mai pan ler mod lew 5555555
+description: Home
+template:
+  repo: tum-mai-pan-ler-mod-lew-5555555-template
+  name: tum-mai-pan-ler-mod-lew-5555555
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
